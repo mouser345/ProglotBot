@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: crypto-signal-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: "<твой_токен_бота>"
+      - key: CHAT_ID
+        value: "@MumbaImba"
